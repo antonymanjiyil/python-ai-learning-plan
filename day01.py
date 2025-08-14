@@ -9,11 +9,15 @@ How to use AI today (examples):
 - Ask: Add type hints and a detailed docstring.
 - Ask: Write 3 pytest tests with edge cases.
 """
-
+from datetime import date
 # Start here
 def main():
     # TODO: implement today's challenge
-    pass
+    name = "Antony"
+    age = 39
+    today = date.today().strftime("%d-%m-%Y")   
+    print(f"Name: {name}\nAge: {age}\nToday's Date: {today}")
+
 
 
 if __name__ == "__main__":
